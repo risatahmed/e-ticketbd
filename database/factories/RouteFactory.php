@@ -22,7 +22,9 @@ class RouteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'from'=>$this->faker->streetName,
+            'to'=>$this->faker->streetName,
+            'toll'=>0
         ];
     }
 }

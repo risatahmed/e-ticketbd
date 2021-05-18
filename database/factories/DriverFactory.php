@@ -22,7 +22,9 @@ class DriverFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>$this->faker->name,
+            'phone'=>$this->faker->phoneNumber,
+            'nid'=>$this->faker->numberBetween($min = 100000000, $max = 90000000000)
         ];
     }
 }
